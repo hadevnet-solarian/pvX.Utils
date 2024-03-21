@@ -1,19 +1,27 @@
-runs-on: windows-2019
+name: pvXAction Build
 
-steps:
-- uses: actions/checkout@v2
+on:
+  push:
+    branches: master
 
-- name: Setup MSBuild
-  uses: microsoft/setup-msbuild@v1
-
-- name: Setup NuGet
-  uses: NuGet/setup-nuget@v1.0.5
-  
-- name: setup-msbuild
-  uses: microsoft/setup-msbuild@v1.1
-
-- name: Restore Packages
-  run: nuget restore pvX.Utils.sln
-
-- name: Build solution
-  run: msbuild pvX.Utils.sln -t:rebuild -property:Configuration=Release
+jobs:
+  build:
+    runs-on: windows-2019
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+    
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+      
+    - name: setup-msbuild
+      uses: microsoft/setup-msbuild@v1.1
+    
+    - name: Restore Packages
+      run: nuget restore pvX.Utils.sln
+    
+    - name: Build solution
+      run: msbuild pvX.Utils.sln -t:rebuild -property:Configuration=Release
