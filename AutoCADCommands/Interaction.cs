@@ -4,7 +4,7 @@ using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.GraphicsInterface;
 using Autodesk.Windows;
-using Dreambuild.AutoCAD.Internal;
+using pvX.AutoCAD.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using Application = Autodesk.AutoCAD.ApplicationServices.Application;
 using ColorDialog = Autodesk.AutoCAD.Windows.ColorDialog;
 using Polyline = Autodesk.AutoCAD.DatabaseServices.Polyline;
 
-namespace Dreambuild.AutoCAD
+namespace pvX.AutoCAD
 {
     /// <summary>
     /// Command-line user interactions.

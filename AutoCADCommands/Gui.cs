@@ -9,7 +9,7 @@ using AcadApplication = Autodesk.AutoCAD.ApplicationServices.Application;
 using WinFormsPropertyGrid = System.Windows.Forms.PropertyGrid;
 using WpfWindow = System.Windows.Window;
 
-namespace Dreambuild.AutoCAD
+namespace pvX.AutoCAD
 {
     /// <summary>
     /// The GUI component gallery.

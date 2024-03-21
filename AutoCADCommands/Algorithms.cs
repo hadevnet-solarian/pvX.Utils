@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Dreambuild.AutoCAD
+namespace pvX.AutoCAD
 {
     using IniData = Dictionary<string, Dictionary<string, string>>;
 

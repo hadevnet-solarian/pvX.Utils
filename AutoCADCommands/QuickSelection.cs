@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Dreambuild.AutoCAD
+namespace pvX.AutoCAD
 {
     /// <summary>
     /// Quick selection toolbox.

@@ -3,12 +3,12 @@ using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.Runtime;
-using Dreambuild.AutoCAD.Internal;
+using pvX.AutoCAD.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Dreambuild.AutoCAD
+namespace pvX.AutoCAD
 {
     /// <summary>
     /// Tests and samples

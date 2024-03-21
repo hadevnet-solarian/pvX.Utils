@@ -3,7 +3,7 @@ using Autodesk.AutoCAD.DatabaseServices;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Dreambuild.AutoCAD.Internal
+namespace pvX.AutoCAD.Internal
 {
     /// <summary>
     /// DWG global flexible data storage.

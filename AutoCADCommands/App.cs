@@ -8,7 +8,7 @@ using System.Text;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace Dreambuild.AutoCAD
+namespace pvX.AutoCAD
 {
     /// <summary>
     /// Application and multi-docs.
