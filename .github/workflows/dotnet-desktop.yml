@@ -39,4 +39,4 @@ jobs:
       env:
         AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
       run: |
-        nuget push -Source "pvx.Utils" -ApiKey az *.nupkg
+        nuget push -Source "pvx.Utils" -ApiKey az -NonInteractive *.nupkg
