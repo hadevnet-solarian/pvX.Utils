@@ -28,7 +28,13 @@ jobs:
 
     - name: Pack NuGet package
       run: nuget pack Utils/pvX.Utils.csproj -Properties Configuration=Release -Version 1.4.3
-          
+
+    - name: Add NuGet package Source
+      env:
+        AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
+      run: |
+        nuget sources Add -Name "pvx.Utils" -Source "https://pkgs.dev.azure.com/pvx-cad/pvX.Utils/_packaging/pvx.Utils/nuget/v3/index.json"
+        
     - name: Push NuGet package to Azure Artifacts
       env:
         AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
