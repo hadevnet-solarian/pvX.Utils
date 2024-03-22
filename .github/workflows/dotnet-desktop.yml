@@ -27,5 +27,5 @@ jobs:
       run: msbuild pvX.Utils.sln -t:rebuild -property:Configuration=Release
 
     - name: Pack NuGet package
-      run: nuget pack pvX.Utils.sln -Properties Configuration=Release -Version 1.4.3
+      run: nuget pack Utils/pvX.Utils.csproj -Properties Configuration=Release -Version 1.4.3
           
