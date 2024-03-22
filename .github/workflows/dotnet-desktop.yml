@@ -38,5 +38,7 @@ jobs:
     - name: Push NuGet package to Azure Artifacts
       env:
         AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
+        VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: '{"endpointCredentials": [{"endpoint":"https://pkgs.dev.azure.com/pvx-cad/pvX.Utils/_packaging/pvX.Utils/nuget/v3/index.json", "username":"orcun@pvx.ai", "password":"${{ secrets.AZURE_DEVOPS_PAT }}"}]}'
       run: |
         nuget push -Source "pvx.Utils" -ApiKey az -NonInteractive *.nupkg
+        
