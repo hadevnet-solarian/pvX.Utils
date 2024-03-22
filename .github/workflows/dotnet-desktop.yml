@@ -29,3 +29,8 @@ jobs:
     - name: Pack NuGet package
       run: nuget pack Utils/pvX.Utils.csproj -Properties Configuration=Release -Version 1.4.3
           
+    - name: Push NuGet package to Azure Artifacts
+      env:
+        AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
+      run: |
+        nuget push -Source "pvX.Utils" -ApiKey az *.nupkg
