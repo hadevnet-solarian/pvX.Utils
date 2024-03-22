@@ -156,6 +156,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <None Include="nuget.config" />
     <None Include="Utils.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
