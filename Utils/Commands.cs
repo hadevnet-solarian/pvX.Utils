@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Polyline = Autodesk.AutoCAD.DatabaseServices.Polyline;
 
-namespace pvX.AutoCAD
+namespace pvX.Utils
 {
     /// <summary>
     /// The "Draw" module: directly draw entities (with AutoCAD-command-like functions)

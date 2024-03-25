@@ -4,7 +4,7 @@ using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.GraphicsInterface;
 using Autodesk.Windows;
-using pvX.AutoCAD.Internal;
+using pvX.Utils.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using Application = Autodesk.AutoCAD.ApplicationServices.Application;
 using ColorDialog = Autodesk.AutoCAD.Windows.ColorDialog;
 using Polyline = Autodesk.AutoCAD.DatabaseServices.Polyline;
 
-namespace pvX.AutoCAD
+namespace pvX.Utils
 {
     /// <summary>
     /// Command-line user interactions.

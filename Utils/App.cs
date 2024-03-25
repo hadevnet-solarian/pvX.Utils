@@ -8,7 +8,7 @@ using System.Text;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace pvX.AutoCAD
+namespace pvX.Utils
 {
     /// <summary>
     /// Application and multi-docs.

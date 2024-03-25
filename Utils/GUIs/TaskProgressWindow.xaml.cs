@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace pvX.AutoCAD
+namespace pvX.Utils
 {
     /// <summary>
     /// TaskProgressWindow.xaml code behind.

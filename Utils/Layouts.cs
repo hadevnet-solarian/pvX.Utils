@@ -3,7 +3,7 @@ using Autodesk.AutoCAD.Geometry;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace pvX.AutoCAD
+namespace pvX.Utils
 {
     /// <summary>
     /// Layout operations.

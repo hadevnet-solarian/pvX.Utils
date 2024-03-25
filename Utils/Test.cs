@@ -3,12 +3,12 @@ using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.Runtime;
-using pvX.AutoCAD.Internal;
+using pvX.Utils.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace pvX.AutoCAD
+namespace pvX.Utils
 {
     /// <summary>
     /// Tests and samples
