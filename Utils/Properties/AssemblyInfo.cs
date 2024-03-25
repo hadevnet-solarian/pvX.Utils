@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("pvX")]
 [assembly: AssemblyProduct("pvX")]
-[assembly: AssemblyCopyright("Copyright © pvX 2011")]
+[assembly: AssemblyCopyright("Copyright © pvX 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
