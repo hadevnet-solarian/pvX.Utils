@@ -143,13 +143,14 @@ namespace pvX.Utils
         /// </summary>
         /// <param name="message">The message.</param>
         /// <param name="defaultValue">The default value.</param>
+        /// <param name="allowNegativeValues">Allows entering negative values by user if true.</param>
         /// <returns>The value.</returns>
-        public static double GetValue(string message, double? defaultValue = null)
+        public static double GetValue(string message, double? defaultValue = null, bool allowNegativeValues = false)
         {
             var ed = Application.DocumentManager.MdiActiveDocument.Editor;
             var res = defaultValue == null
-                ? ed.GetDouble(new PromptDoubleOptions(message) { AllowNone = true })
-                : ed.GetDouble(new PromptDoubleOptions(message) { DefaultValue = defaultValue.Value, AllowNone = true });
+                ? ed.GetDouble(new PromptDoubleOptions(message) { AllowNone = true, AllowNegative = allowNegativeValues })
+                : ed.GetDouble(new PromptDoubleOptions(message) { DefaultValue = defaultValue.Value, AllowNone = true, AllowNegative = allowNegativeValues });
 
             if (res.Status == PromptStatus.OK)
             {
